@@ -14,3 +14,4 @@ with open("результати.txt", "w") as result_file:
         result_file.write(f"x = {x}, f(x) = {result}\n")
         x += delta_x
 
+    
