@@ -1,15 +1,15 @@
 import random 
-import math
+import math 
 
 def listX():
     x = []
-    for element in range(13):   x.append(random.randrange(10000))
+    for element in range(13):   x.append(random.randrange(100))
     return x
 
-print(listX())
+x = listX()
+print(x)
 
-def sort(arr):
-    arr = listX()
+def sort(arr):  
     n = len(arr)
     for i in range(n):
         swapped = False
@@ -21,13 +21,13 @@ def sort(arr):
             break
     return arr
 
-print(sort(listX()))
+print(sort(x))
 
 def operation(arr):
     return (4 * arr[1] * math.cos(arr[12])) / (math.pi * (pow(arr[5], 2) - 1)) 
 
 def main():
-    print(operation(sort(listX())))
+    print(operation(sort(x)))
 
 if __name__ == "__main__":
     main()
